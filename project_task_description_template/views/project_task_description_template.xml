@@ -24,11 +24,11 @@
         <field name="name">Task Description Template List</field>
         <field name="model">project.task.description.template</field>
         <field name="arch" type="xml">
-            <tree string="Task Description Templates">
+            <list string="Task Description Templates">
                 <field name="sequence" widget="handle"/>
                 <field name="name"/>
                 <field name="active"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -46,7 +46,7 @@
     <record id="project_task_description_template_action" model="ir.actions.act_window">
         <field name="name">Task Description Templates</field>
         <field name="res_model">project.task.description.template</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <menuitem

@@ -4,7 +4,7 @@
 
 {
     "name": "Project Task Resource Type",
-    "version": "1.0.0",
+
     "category": "Build'r",
     "description": "Add the referentiel Resource and the field to the tasks.",
     "author": "Numigi",

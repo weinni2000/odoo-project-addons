@@ -27,13 +27,13 @@
         <field name="model">project.project</field>
         <field name="inherit_id" ref="project.view_project"/>
         <field name="arch" type="xml">
-            <tree position="inside">
+            <list position="inside">
                 <field name="min_hours" string="Min" sum="Min" widget="float_time"/>
                 <field name="planned_hours" string="Ideal" sum="Ideal" widget="float_time"/>
                 <field name="max_hours" string="Max" sum="Max" widget="float_time"/>
                 <field name="consumed_hours" string="Spent" widget="float_time"/>
                 <field name="remaining_hours" string="Remaining" widget="float_time"/>
-            </tree>
+            </list>
         </field>
     </record>
 

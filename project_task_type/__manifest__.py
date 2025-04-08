@@ -3,7 +3,7 @@
 
 {
     'name': 'Project Task Type',
-    'version': '1.0.0',
+
     'author': 'Numigi',
     'maintainer': 'Numigi',
     'website': 'https://bit.ly/numigi-com',

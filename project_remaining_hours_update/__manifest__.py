@@ -3,7 +3,7 @@
 
 {
     'name': 'Project Remaining Hours Update',
-    'version': "14.0.1.0.0",
+
     'author': 'Numigi',
     'maintainer': 'Numigi',
     'website': 'https://bit.ly/numigi-com',

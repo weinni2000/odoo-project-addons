@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <odoo>
 
     <record id="task_form_with_is_template" model="ir.ui.view">
@@ -7,15 +7,12 @@
         <field name="inherit_id" ref="project.view_task_form2"/>
         <field name="arch" type="xml">
             <header position="after">
-                <div class="alert alert-warning"
-                     role="alert"
-                     attrs="{'invisible': [('is_template', '=', False)]}"
-                     >
+                <div class="alert alert-warning" role="alert" invisible="not is_template">
                         You are currently viewing a task template. Some fields are therefore hidden.
                 </div>
             </header>
             <field name="parent_id" position="after">
-                <field name="is_template" attrs="{'readonly': [('parent_id', '!=', False)]}" force_save="1"/>
+                <field name="is_template" readonly="parent_id" force_save="1"/>
             </field>
         </field>
     </record>
@@ -62,8 +59,7 @@
         <field name="arch" type="xml">
             <xpath expr="//separator[last()]" position="after">
                 <filter string="Tasks" name="filter_not_template" domain="[('is_template', '=', False)]"/>
-                <filter string="Templates" name="filter_is_template" domain="[('is_template', '=', True)]"
-                    context="{'show_task_templates': True}"/>
+                <filter string="Templates" name="filter_is_template" domain="[('is_template', '=', True)]" context="{'show_task_templates': True}"/>
                 <separator/>
             </xpath>
         </field>

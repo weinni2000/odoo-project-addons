@@ -4,7 +4,7 @@
 
 {
     'name': 'Project Task ID In Display Name',
-    'version': '1.1.0',
+
     'author': 'Numigi',
     'maintainer': 'Numigi',
     'website': 'https://bit.ly/numigi-com',

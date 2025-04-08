@@ -3,7 +3,7 @@
 
 {
     "name": "Project Task Description Template",
-    "version": "1.0.0",
+
     "author": "Numigi",
     "maintainer": "Numigi",
     "website": "https://www.numigi.com",

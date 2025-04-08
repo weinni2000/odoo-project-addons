@@ -3,7 +3,7 @@
 
 {
     'name': 'Project Task Deadline From Project',
-    'version': '1.0.0',
+
     'author': 'Numigi',
     'maintainer': 'Numigi',
     'website': 'https://bit.ly/numigi-com',

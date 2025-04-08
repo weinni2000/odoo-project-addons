@@ -3,7 +3,7 @@
 
 {
     'name': 'Project Template / Timesheet',
-    'version': '1.0.0',
+
     'author': 'Numigi',
     'maintainer': 'Numigi',
     'license': 'LGPL-3',

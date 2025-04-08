@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <odoo>
 
     <!--We want to drive the project of the subtasks from the parent task,-->
@@ -9,7 +9,16 @@
         <field name="inherit_id" ref="project.view_task_form2"/>
         <field name="arch" type="xml">
             <field name="project_id" position="attributes">
-                <attribute name="attrs">{'readonly': [('parent_id', '!=', False)]}</attribute>
+                <attribute name="readonly">parent_id</attribute>
+                <!--TODO: Result from converting 'attrs' attribute override without options for ['invisible', 'required', 'column_invisible'] to separate attributes
+                     Remove redundant empty tags below for any of those attributes that are not present in the field tag in any of the parent views
+                     If someone later adds one of these attributes in the parent views, they would likely be unaware it's still overridden in this view, resulting in unexpected behaviour, which should be avoided-->
+                <!--TODO: Result from 'attrs' -> 'invisible' conversion without also overriding 'states' attribute
+                     Check if this field tag contained a states attribute in any of the parent views, that should be combined into this 'invisible' attribute
+                     (If any states attributes existed in parent views, they'll also be marked with a TODO)-->
+                <attribute name="invisible"/>
+                <attribute name="required"/>
+                <attribute name="column_invisible"/>
             </field>
         </field>
     </record>
@@ -26,7 +35,16 @@
                 <field name="parent_id" invisible="1"/>
             </field>
             <field name="project_id" position="attributes">
-                <attribute name="attrs">{'readonly': [('parent_id', '!=', False)]}</attribute>
+                <attribute name="readonly">parent_id</attribute>
+                <!--TODO: Result from converting 'attrs' attribute override without options for ['invisible', 'required', 'column_invisible'] to separate attributes
+                     Remove redundant empty tags below for any of those attributes that are not present in the field tag in any of the parent views
+                     If someone later adds one of these attributes in the parent views, they would likely be unaware it's still overridden in this view, resulting in unexpected behaviour, which should be avoided-->
+                <!--TODO: Result from 'attrs' -> 'invisible' conversion without also overriding 'states' attribute
+                     Check if this field tag contained a states attribute in any of the parent views, that should be combined into this 'invisible' attribute
+                     (If any states attributes existed in parent views, they'll also be marked with a TODO)-->
+                <attribute name="invisible"/>
+                <attribute name="required"/>
+                <attribute name="column_invisible"/>
             </field>
         </field>
     </record>

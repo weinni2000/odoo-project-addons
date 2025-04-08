@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <odoo>
 
     <record id="warehouse_form_with_consumption_steps" model="ir.ui.view">
@@ -11,16 +11,13 @@
             </field>
             <field name="wh_output_stock_loc_id" position="after">
                 <field name="consu_location_id" readonly="1"/>
-                <field name="consu_prep_location_id" string="Preparation Location" attrs="{'required': [('consu_steps', '=', 'two_steps')],
-                            'invisible': [('consu_steps', '!=', 'two_steps')]}" context="{'default_usage': 'internal',
-                              'default_location_id': view_location_id}"/>
+                <field name="consu_prep_location_id" string="Preparation Location" required="consu_steps == 'two_steps'" invisible="consu_steps != 'two_steps'" context="{'default_usage': 'internal',                               'default_location_id': view_location_id}"/>
             </field>
             <field name="out_type_id" position="after">
                 <field name="consu_type_id" readonly="1"/>
                 <field name="consu_return_type_id" readonly="1"/>
-                <field name="consu_prep_type_id" readonly="1" 
-                attrs="{'invisible': [('consu_steps', '!=', 'two_steps')]}"/>
-                <field name="consu_prep_return_type_id" readonly="1" attrs="{'invisible': [('consu_steps', '!=', 'two_steps')]}"/>
+                <field name="consu_prep_type_id" readonly="1" invisible="consu_steps != 'two_steps'"/>
+                <field name="consu_prep_return_type_id" readonly="1" invisible="consu_steps != 'two_steps'"/>
             </field>
         </field>
     </record>

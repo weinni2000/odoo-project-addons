@@ -17,9 +17,9 @@
         <field name="model">account.analytic.line</field>
         <field name="inherit_id" ref="analytic.view_account_analytic_line_tree"/>
         <field name="arch" type="xml">
-            <tree position="inside">
+            <list position="inside">
                 <field name="revenue"/>
-            </tree>
+            </list>
         </field>
     </record>
 

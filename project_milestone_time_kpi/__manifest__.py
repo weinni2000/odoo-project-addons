@@ -3,7 +3,7 @@
 
 {
     "name": "Project Milestone Time KPI",
-    "version": "1.0.0",
+
     "author": "Numigi",
     "maintainer": "Numigi",
     "website": "https://bit.ly/numigi-com",

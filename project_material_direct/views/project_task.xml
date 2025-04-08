@@ -8,12 +8,12 @@
         <field name="arch" type="xml">
             <field name="material_line_ids" position="after">
                 <field name="direct_material_line_ids" nolabel="1" col="2">
-                    <tree editable="bottom">
+                    <list editable="bottom">
                         <field name="product_id"/>
                         <field name="consumed_qty" string="Quantity"/>
                         <field name="product_uom_id"/>
                         <field name="unit_cost"/>
-                    </tree>
+                    </list>
                     <form string="Direct Consumption">
                         <group>
                             <group>

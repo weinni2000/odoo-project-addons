@@ -5,7 +5,7 @@
 
 {
     'name': 'Project Stage No Quick Create',
-    'version': '1.0.0',
+
     'author': 'Savoir-faire Linux',
     'maintainer': 'Numigi',
     'website': 'https://bit.ly/numigi-com',

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <odoo>
 
     <record id="product_form_with_outsourcing" model="ir.ui.view">
@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="purchase.view_product_supplier_inherit"/>
         <field name="arch" type="xml">
             <field name="variant_seller_ids" position="after">
-                <group string="Subcontracting" name="subcontracting" attrs="{'invisible': [('type', '!=', 'service')]}">
+                <group string="Subcontracting" name="subcontracting" invisible="type != 'service'">
                     <field name="automate_time_entries"/>
                 </group>
             </field>

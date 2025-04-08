@@ -3,7 +3,7 @@
 
 {
     "name": "Project Task Link",
-    "version": "1.1.2",
+
     "author": "Numigi",
     "maintainer": "Numigi",
     "website": "https://bit.ly/numigi-com",

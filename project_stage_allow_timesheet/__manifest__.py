@@ -5,7 +5,7 @@
     'name': 'Project Stage Allow Timesheet',
     'summary': """
         Allows to tell that a project stage is opened for timesheets.""",
-    'version': '1.0.0',
+
     'author': 'Numigi',
     'maintainer': 'Numigi',
     'website': 'https://bit.ly/numigi-com',

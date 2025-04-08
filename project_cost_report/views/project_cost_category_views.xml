@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <odoo>
 
     <record id="project_cost_category_form" model="ir.ui.view">
@@ -10,10 +10,8 @@
                 </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
-                        <button name="toggle_active" type="object"
-                                class="oe_stat_button" icon="fa-archive">
-                            <field name="active" widget="boolean_button"
-                                options='{"terminology": "archive"}'/>
+                        <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+                            <field name="active" widget="boolean_button" options="{&quot;terminology&quot;: &quot;archive&quot;}"/>
                         </button>
                     </div>
                     <div class="oe_title">
@@ -25,9 +23,9 @@
                         <group name="group_1">
                             <field name="sequence"/>
                             <field name="section"/>
-                            <field name="target_type" attrs="{'invisible': [('section', '!=', 'time')]}"/>
-                            <field name="target_margin" attrs="{'invisible': [('target_type', '!=', 'percent')]}"/>
-                            <field name="target_hourly_rate" attrs="{'invisible': [('target_type', '!=', 'hourly_rate')]}"/>
+                            <field name="target_type" invisible="section != 'time'"/>
+                            <field name="target_margin" invisible="target_type != 'percent'"/>
+                            <field name="target_hourly_rate" invisible="target_type != 'hourly_rate'"/>
                         </group>
                         <group name="group_2">
                         </group>
@@ -43,12 +41,12 @@
         <field name="name">Project Cost Category List</field>
         <field name="model">project.cost.category</field>
         <field name="arch" type="xml">
-            <tree string="Project Cost Categories">
+            <list string="Project Cost Categories">
                 <field name="sequence" widget="handle"/>
                 <field name="name"/>
                 <field name="section"/>
                 <field name="active"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -69,16 +67,11 @@
         <field name="name">Project Cost Categories</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">project.cost.category</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
         <field name="view_id" ref="project_cost_category_list"/>
         <field name="search_view_id" ref="project_cost_category_search"/>
     </record>
 
-    <menuitem id="project_cost_category_menu"
-        name="Cost Report Categories"
-        action="action_project_cost_category"
-        parent="project.menu_project_config"
-        sequence="500"
-        />
+    <menuitem id="project_cost_category_menu" name="Cost Report Categories" action="action_project_cost_category" parent="project.menu_project_config" sequence="500"/>
 
 </odoo>

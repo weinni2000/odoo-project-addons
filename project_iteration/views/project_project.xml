@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <odoo>
 
     <record id="project_form_with_parent" model="ir.ui.view">
@@ -7,8 +7,7 @@
         <field name="inherit_id" ref="project.edit_project"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='name']/.." position="after">
-                <field name="parent_id" placeholder="Parent Project"
-                    attrs="{'invisible': [('is_parent', '=', True)]}"/>
+                <field name="parent_id" placeholder="Parent Project" invisible="is_parent"/>
                 <field name="is_parent" invisible="1"/>
             </xpath>
         </field>
@@ -32,7 +31,7 @@
         <field name="inherit_id" ref="project.edit_project"/>
         <field name="arch" type="xml">
             <div class="oe_button_box" name="button_box" groups="base.group_user">
-                <button class="oe_stat_button" type="action" icon="fa-puzzle-piece" name="%(action_project_iterations)d" attrs="{'invisible': [('parent_id', '!=', False)]}">
+                <button class="oe_stat_button" type="action" icon="fa-puzzle-piece" name="%(action_project_iterations)d" invisible="parent_id">
                     <field string="Iterations" name="children_count" widget="statinfo"/>
                 </button>
             </div>

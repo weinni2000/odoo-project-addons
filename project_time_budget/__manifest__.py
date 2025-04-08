@@ -3,7 +3,7 @@
 
 {
     "name": "Project Time Budget",
-    "version": "1.0.0",
+
     "author": "Numigi",
     "maintainer": "Numigi",
     "website": "https://bit.ly/numigi-com",

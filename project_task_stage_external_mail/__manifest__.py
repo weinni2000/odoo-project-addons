@@ -3,7 +3,7 @@
 
 {
     'name': 'Project Task Stage External Mail',
-    'version': '14.0.1.0.0',
+
     'category': 'Project',
     'summary': "Send an external email for a task stage",
     'author': 'Numigi',
