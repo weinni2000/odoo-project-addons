@@ -6,6 +6,7 @@
 
     "author": "Numigi",
     "maintainer": "Numigi",
+    "licence": "LGPL-3",
     "website": "https://www.numigi.com",
     "license": "LGPL-3",
     "category": "Other",

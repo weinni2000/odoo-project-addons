@@ -3,7 +3,7 @@
 
 {
     'name': 'Project Default Task Stages',
-
+    'licence': 'LGPL-3',
     'author': 'Numigi',
     'maintainer': 'Numigi',
     'website': 'https://bit.ly/numigi-com',
