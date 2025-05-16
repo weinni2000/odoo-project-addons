@@ -7,6 +7,7 @@
     'name': 'Project Stage No Quick Create',
 
     'author': 'Savoir-faire Linux',
+    'licence': 'LGPL-3',
     'maintainer': 'Numigi',
     'website': 'https://bit.ly/numigi-com',
     'licence': 'LGPL-3',

@@ -23,7 +23,7 @@ default_language_version:
   node: "14.13.0"
 repos:
   - repo: https://github.com/PyCQA/flake8
-    rev: 3.8.3
+    rev: 6.1.0
     hooks:
       - id: flake8
         name: flake8

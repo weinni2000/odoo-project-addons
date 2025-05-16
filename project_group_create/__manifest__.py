@@ -6,6 +6,7 @@
 
     "author": "Numigi",
     "maintainer": "Numigi",
+    'licence': 'LGPL-3',
     "website": "https://bit.ly/numigi-com",
     "licence": "LGPL-3",
     "category": "Project Management",
